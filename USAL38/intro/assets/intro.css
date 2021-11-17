@@ -1,0 +1,28 @@
+body {
+    color: white;
+    background: linear-gradient(#000, #00C);
+    min-height: 100vh;
+}
+
+h1 {
+    color: red;
+}
+
+.movies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.movie {
+    background-color: magenta;
+    flex-basis:100%
+}
+
+@media (min-width: 1024px) {
+    .movie {
+        flex-basis: 45%;
+    }
+}
+

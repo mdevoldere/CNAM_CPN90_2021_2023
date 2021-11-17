@@ -17,7 +17,8 @@
                 // si $name n'est pas une chaine de caractères OU si $name n'est pas vide
                 if(!is_string($name) || empty($name)) {
                     //print("");
-                    echo '<p class="">Le nom fourni est vide</p>';
+                    echo '<p class="">C\'est vide</p>';
+                    echo "<p class=\"\">Le nom fourni est vide</p>";
                 }
                 // si $name ne correspond pas au format attendu 
                 // le format est défini par une expression régulière (REGEX)

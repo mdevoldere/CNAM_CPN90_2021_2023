@@ -29,6 +29,7 @@
             else if($age < 65) {
                 $difference = 65 - $age;
                 echo "Il vous reste $difference années avant la retraite";
+                echo 'Il vous reste ' . $difference . ' années avant la retraite';
             }
             else {
                 echo "BINGO vous êtes à la retraite";
