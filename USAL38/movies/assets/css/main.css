@@ -94,6 +94,10 @@ a:hover, a:focus {
     flex-basis: 24%;
 }
 
+.movies p {
+    margin: .2rem;
+}
+
 .fa {
     font-size: 1.8rem;
 }

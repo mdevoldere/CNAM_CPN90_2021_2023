@@ -13,8 +13,8 @@
         <h1>Films</h1>
         <nav class="menu">
                 <ul>
-                    <li><a href="#">Tous les films</a></li>
-                    <li><a href="#">Catégories</a></li>
+                    <li><a href="?page=home">Tous les films</a></li>
+                    <li><a href="?page=categories">Catégories</a></li>
                     <li><a href="#">Admin</a></li>
                 </ul>
             </nav>
