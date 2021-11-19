@@ -9,4 +9,7 @@
     <article>
         <h2>Film 3</h2>
     </article>
+    <article>
+        <h2>Film 4</h2>
+    </article>
 </section>
