@@ -6,7 +6,7 @@ CREATE DATABASE IF NOT EXISTS db_movies;
 
 USE db_movies;
 
-
+DROP TABLE IF EXISTS movies;
 
 create table roles 
 (
@@ -22,6 +22,8 @@ create table people
     person_firstname VARCHAR(50) NOT NULL,
     person_gender CHAR(1) NOT NULL
 );
+
+
 
 CREATE TABLE subjects 
 (
@@ -41,12 +43,16 @@ create table movies
     FOREIGN KEY (subject_id) REFERENCES subjects(subject_id)
 );
 
+
 create table movies_people
 (
-	movie_id INT,
     person_id INT,
     role_id INT,
-    PRIMARY KEY (movie_id, person_id, role_id)
+    movie_id INT,
+    PRIMARY KEY (person_id, role_id, movie_id),
+    FOREIGN KEY (person_id) REFERENCES people(person_id),
+    FOREIGN KEY (role_id) REFERENCES roles(role_id),
+    FOREIGN KEY (movie_id) REFERENCES movies(movie_id)
 );
 
 
